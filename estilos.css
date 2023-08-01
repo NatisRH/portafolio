@@ -5,8 +5,8 @@ body {
 
 .header {
     background-image: url('./imagenes/encabezado.png');
-    background-size: cover;
-    height: 500px; 
+    background-size: cover; /* O '100%' para cubrir el ancho completo */
+    height: 400px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
 }
 
 .header-content {
-    background-color: rgba(0, 0, 0, 0.5); /* opacidad del fondo*/
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad del fondo */
     padding: 20px;
 }
 
@@ -27,9 +27,26 @@ h1 {
 .sobreMi {
     text-align: center;
     padding: 30px;
+    font-size: 1rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
 }
 
 h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+}
+
+/* Para pantallas más pequeñas, ajustar la distribución del contenido */
+@media (max-width: 767px) {
+    .header {
+        height: 300px; /* Puedes ajustar la altura según tus necesidades */
+        font-size: 1.5rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+    }
+
+    .header-content {
+        padding: 10px;
+    }
+
+    .sobreMi {
+        padding: 10px;
+    }
 }
