@@ -4,9 +4,9 @@ body {
 }
 
 .header {
-    background-image: url('/imagenes/encabezado.jpg');
+    background-image: url('./imagenes/encabezado.jpg');
     background-size: cover;
-    height: 400px; /* Ajusta esta altura según tus necesidades */
+    height: 300px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@ body {
 }
 
 .header-content {
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad del fondo según tu imagen */
+    background-color: rgba(0, 0, 0, 0.5); /* opacidad del fondo*/
     padding: 20px;
 }
 
