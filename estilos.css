@@ -37,11 +37,13 @@ h1 {
 p {
     font-size: 1.5rem;
     font-family: sans-serif;
-    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.sobreMi {
+.inicio,.habilidades,.proyectos,.contacto,.estudio {
     text-align: center;
+    margin-top: 0px;
     padding: 30px;
     font-size: 1rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
 }
@@ -49,7 +51,7 @@ p {
 h2 {
     font-family: 'FuenteTitulo', sans-serif;
     font-size: 3rem;
-    margin-bottom: 10px;
+    margin: 2px;
 }
 
 
@@ -83,7 +85,28 @@ h2 {
     color: black; /* Color del texto */
     font-family: 'FuenteTitulo', sans-serif; /* Utilizar la fuente personalizada */
 }
-  
+ 
+/*ICONOS */
+.icon-container {
+    display: flex;
+    justify-content: center; /* Espacio uniforme entre los iconos */
+    align-items: center; /* Centrar verticalmente los iconos */
+    margin-top: 30px;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px;
+}
+
+
+.icon img {
+    width: 10vh; /* Ajusta el tamaño de las imágenes usando vh */
+    height: 10vh;
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    max-height: 100%;
+}
 
 /* Para pantallas más pequeñas, ajustar la distribución del contenido */
 @media (max-width: 767px) {
@@ -92,14 +115,16 @@ h2 {
         font-size: 1.5rem;
     }
     p{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
  
     .header-content {
         padding: 10px;
     }
 
-    .sobreMi {
+    .inicio {
         padding: 10px;
     }
     .menu li {
