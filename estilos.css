@@ -52,11 +52,44 @@ h2 {
     margin-bottom: 10px;
 }
 
+
+.menu {
+    position: fixed; /* Hacer que el menú quede fijo en la parte superior */
+    top: 0; /* Pegar el menú en la parte superior */
+    left: 0;
+    width: 100%; /* Ocupar todo el ancho disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #f9c0d9;
+    margin: 0;
+    padding: 0;
+    z-index: 1000; /* Asegurarse de que el menú esté por encima del contenido */
+}
+  .menu ul {
+    list-style: none; /* Quitar los puntos de la lista */
+    display: flex; /* Utilizar Flexbox para alinear los elementos del menú */
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    margin: 0 1.9rem; /* Espaciado entre los elementos del menú */
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: black; /* Color del texto */
+    font-family: 'FuenteTitulo', sans-serif; /* Utilizar la fuente personalizada */
+}
+  
+
 /* Para pantallas más pequeñas, ajustar la distribución del contenido */
 @media (max-width: 767px) {
     .header {
-        height: 300px; /* Puedes ajustar la altura según tus necesidades */
-        font-size: 1.5rem; /* Tamaño de fuente ajustado para pantallas más pequeñas */
+        height: 300px; 
+        font-size: 1.5rem;
     }
     p{
         font-size: 1rem;
@@ -68,5 +101,11 @@ h2 {
 
     .sobreMi {
         padding: 10px;
+    }
+    .menu li {
+        margin: 0 1rem;
+    }
+    .menu a {
+        font-size: 1.2rem;
     }
 }
