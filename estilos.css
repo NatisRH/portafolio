@@ -85,7 +85,28 @@ h2 {
     color: black; /* Color del texto */
     font-family: 'FuenteTitulo', sans-serif; /* Utilizar la fuente personalizada */
 }
-  
+ 
+/*ICONOS */
+.icon-container {
+    display: flex;
+    justify-content: center; /* Espacio uniforme entre los iconos */
+    align-items: center; /* Centrar verticalmente los iconos */
+    margin-top: 30px;
+}
+
+.icon {
+    display: inline-block;
+    text-align: center;
+    margin: 0 15px;
+}
+
+
+.icon img {
+    width: 10vh; /* Ajusta el tamaño de las imágenes usando vh */
+    height: 10vh;
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+    max-height: 100%;
+}
 
 /* Para pantallas más pequeñas, ajustar la distribución del contenido */
 @media (max-width: 767px) {
